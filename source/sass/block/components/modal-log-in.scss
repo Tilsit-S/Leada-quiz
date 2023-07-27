@@ -1,0 +1,118 @@
+.main {
+    &__logo-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 16px;
+    }
+
+    &__icon {
+        width: 101px;
+        height: 56px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+}
+
+.modal-log-in {
+    &__box {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 188px;
+        width: 676px;
+        padding: 64px 117px 64px 118px;
+        border-radius: 16px;
+        background-color: $white;
+        transform: translate(-50%, 0%);
+    }
+
+    &__title-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 56px;
+    }    
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__registration-link,
+    &__forget-pass-link {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $text-blue;
+    }
+
+    &__mail-wrapper,
+    &__password-wrapper {
+        margin-bottom: 36px;
+    }
+
+    &__label {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        margin-bottom: 8px;
+        cursor: pointer;
+    }
+
+    &__e-mail-form,
+    &__password-form {
+        width: 100%;
+        padding: 14px 12px;
+        border-radius: 8px;
+        border: 1px solid var(--default-borders, #DAE2E8);
+    }
+
+    &__password-btn-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__button {
+        position: relative;
+        display: inline-block;
+        width: 141px;
+        padding: 14px 0;
+        align-items: center;
+        border-radius: 32px;
+        border: none;
+        color: $white;
+        background: var(--buttons-links-primary-default, linear-gradient(90deg, #C84E89 0%, #F15F79 100%));
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url("../img/key.svg");
+            background-size: contain;
+            width: 24px;
+            height: 24px;
+            top: 10px;
+            right: 16px;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    
+}
+
+@media (max-width: $mobile-width) {
+    
+}
