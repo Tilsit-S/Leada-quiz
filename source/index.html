@@ -41,19 +41,20 @@
                                 <label class="modal-log-in__e-mail" for="e-mail">E-mail</label>
                                 <!--<span>Введены некорректные данные</span>-->
                             </div>
-                            <input type="email" class="modal-log-in__e-mail-form" id="e-mail" placeholder="ivanov@mail.ru" required>
+                            <input type="email" class="modal-log-in__e-mail-form" id="e-mail" placeholder="Введите e-mail" required>
                         </div>
     
-                        <div class="modal-log-in__password-wrapper error">
+                        <div class="modal-log-in__password-wrapper">
                             <div class="modal-log-in__label">
                                 <label class="modal-log-in__password" for="pass">Пароль</label>
                                 <!--<span>Такой номер не зарегистрирован</span>-->
                             </div>
-                            <input type="password" class="modal-log-in__password-form" id="pass" placeholder="************">
+                            <input type="password" class="modal-log-in__password-form error-form" id="pass" placeholder="************" required>
                         </div>
+                        <span class="modal-log-in__error-message">Это поле обязательно к заполнению.</span>
                         <div class="modal-log-in__password-btn-wrapper">
                             <a href="#" class="modal-log-in__forget-pass-link">Забыли пароль?</a>
-                            <button class="modal-log-in__button">
+                            <button class="modal-log-in__button error-button">
                                 Войти
                             </button>
                         </div>
